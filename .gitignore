@@ -1,0 +1,12 @@
+*.egg-info
+*.pyc
+.devenv*
+.env
+.idea/
+.mypy_cache/
+.pre-commit-config.yaml
+.pytest_cache/
+__pycache__/
+devenv.local.nix
+result
+models/
