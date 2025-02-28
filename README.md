@@ -1,4 +1,6 @@
 ```console
+$ nix run github:datakurre/rkllm-toolkit-cli
+
  Usage: rkllm-toolkit [OPTIONS] MODEL_IDS...
 
 ╭─ Arguments ───────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -11,3 +13,5 @@
 │ --platform                                   [rk3588|rk3576]  Target platform [default: rk3588]           │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
+
+Based on https://github.com/c0zaut/ez-er-rkllm-toolkit

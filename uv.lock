@@ -535,41 +535,6 @@ wheels = [
 ]
 
 [[package]]
-name = "jolla-mind2-rk-playground"
-version = "0.0.1"
-source = { editable = "." }
-dependencies = [
-    { name = "huggingface-hub" },
-    { name = "inquirer" },
-    { name = "rkllm-toolkit" },
-    { name = "setuptools" },
-    { name = "typer" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "black" },
-    { name = "editables" },
-    { name = "isort" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "huggingface-hub", specifier = ">=0.29.1" },
-    { name = "inquirer", specifier = ">=3.4.0" },
-    { name = "rkllm-toolkit", url = "https://github.com/airockchip/rknn-llm/raw/29a9fb97d14c773b6efa07415dce6ec91c7d8461/rkllm-toolkit/rkllm_toolkit-1.1.4-cp310-cp310-linux_x86_64.whl" },
-    { name = "setuptools", specifier = ">=75.8.2" },
-    { name = "typer", specifier = ">=0.15.1" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "black", specifier = ">=25.1.0" },
-    { name = "editables", specifier = ">=0.5" },
-    { name = "isort", specifier = ">=5.13.2" },
-]
-
-[[package]]
 name = "jsonschema"
 version = "4.23.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1251,6 +1216,41 @@ requires-dist = [
     { name = "tqdm", specifier = "==4.64.1" },
     { name = "transformers", specifier = "==4.45.0" },
     { name = "transformers-stream-generator", specifier = "==0.0.4" },
+]
+
+[[package]]
+name = "rkllm-toolkit-cli"
+version = "0.0.1"
+source = { editable = "." }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "inquirer" },
+    { name = "rkllm-toolkit" },
+    { name = "setuptools" },
+    { name = "typer" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "black" },
+    { name = "editables" },
+    { name = "isort" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "huggingface-hub", specifier = ">=0.29.1" },
+    { name = "inquirer", specifier = ">=3.4.0" },
+    { name = "rkllm-toolkit", url = "https://github.com/airockchip/rknn-llm/raw/29a9fb97d14c773b6efa07415dce6ec91c7d8461/rkllm-toolkit/rkllm_toolkit-1.1.4-cp310-cp310-linux_x86_64.whl" },
+    { name = "setuptools", specifier = ">=75.8.2" },
+    { name = "typer", specifier = ">=0.15.1" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "black", specifier = ">=25.1.0" },
+    { name = "editables", specifier = ">=0.5" },
+    { name = "isort", specifier = ">=5.13.2" },
 ]
 
 [[package]]
