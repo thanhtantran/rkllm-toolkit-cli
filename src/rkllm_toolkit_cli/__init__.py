@@ -94,7 +94,7 @@ class RKLLMRemotePipeline:
             self.export_path = (
                 f"./models/{self.model_name}-{self.lora_name}-{self.platform}/"
             )
-        self.rkllm_version = "1.1.4"
+        self.rkllm_version = "1.2.0"
 
     def remote_pipeline_to_local(self):
         """
