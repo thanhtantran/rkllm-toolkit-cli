@@ -135,7 +135,12 @@ class RKLLMRemotePipeline:
         if self.library_type == "HF":
             print(f"Have to load model for each config")
             status = self.rkllm.load_huggingface(
-                model=self.modelpath, model_lora=self.lorapath, device=self.device
+                model=self.modelpath,
+                model_lora=self.lorapath,
+                device=self.device,
+                dtype="float32",
+                custom_config=None,
+                load_weight=True,
             )
             if status != 0:
                 raise RuntimeError(f"Failed to load model: {status}")
