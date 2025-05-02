@@ -54,7 +54,7 @@ sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
   rkllm-cli MODEL_IDS
 ```
-Or alternative you can run on the image i have built
+Or alternative you can run immediately on the image i have built
 ```
 sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
