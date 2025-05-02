@@ -36,7 +36,7 @@ lines_between_types = 0
 no_sections = true
 
 [tool.uv.sources]
-rkllm-toolkit = { url = "https://github.com/airockchip/rknn-llm/raw/refs/heads/main/rkllm-toolkit/rkllm_toolkit-1.2.0-cp310-cp310-linux_x86_64.whl" }
+rkllm-toolkit = { url = "https://github.com/airockchip/rknn-llm/raw/cb5b341364311065fd19eddd631a79a9f0c5afe1/rkllm-toolkit/rkllm_toolkit-1.2.0-cp310-cp310-linux_x86_64.whl" }
 
 [dependency-groups]
 dev = [
