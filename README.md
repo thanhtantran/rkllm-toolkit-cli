@@ -1,8 +1,9 @@
-## Run native on Ubuntu 22.04 / Python 3.10 (please note that Python 3.10 only)
+## Run natively on Ubuntu 22.04 / Python 3.10 (note that Python 3.10 only)
 
 Install UV
 ```bash
 curl -Ls https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
 ```
 
 Clone the repo
@@ -33,12 +34,11 @@ rkllm-toolkit [OPTIONS] MODEL_IDS...
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
-## Run on other OS (Ubuntu 24.04) and other Python (3.12) by using Docker (you should have docker already installed)
+## Run on higher OS (Ubuntu 24.04) and other Python (3.12) by using Docker (you should have docker already installed)
 
 ```bash
 git clone https://github.com/datakurre/rkllm-toolkit-cli.git
 cd rkllm-toolkit-cli
-docker build 
 docker build -t rkllm-cli .
 ```
 
@@ -54,7 +54,12 @@ sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
   rkllm-cli MODEL_IDS
 ```
-
+Or alternative you can run on the image i have built
+```
+sudo docker run --rm --privileged \
+  -v ~/.cache/huggingface:/root/.cache/huggingface \
+  thanhtantran/rkllm-cli:latest MODEL_IDS
+```
 
 ## Run on NixOS
 ```console
