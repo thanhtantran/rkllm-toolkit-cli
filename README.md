@@ -36,6 +36,7 @@ rkllm-toolkit [OPTIONS] MODEL_IDS...
 
 ## Run on higher OS (Ubuntu 24.04) and other Python (3.12) by using Docker (you should have docker already installed)
 
+Build the image
 ```bash
 git clone https://github.com/datakurre/rkllm-toolkit-cli.git
 cd rkllm-toolkit-cli
@@ -54,7 +55,7 @@ sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
   rkllm-cli MODEL_IDS
 ```
-Or alternative you can run immediately on the image i have built
+Or alternative you can run immediately on the image i have prebuilt
 ```
 sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
