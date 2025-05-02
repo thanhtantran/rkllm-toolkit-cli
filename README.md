@@ -44,7 +44,7 @@ Build the image
 ```bash
 git clone https://github.com/datakurre/rkllm-toolkit-cli.git
 cd rkllm-toolkit-cli
-docker build -t rkllm-cli .
+docker build -t rkllm-toolkit-cli .
 ```
 
 Store your Hugging Face token to pass it into container
@@ -57,13 +57,13 @@ Run container with command
 ```
 sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
-  rkllm-cli MODEL_IDS
+  rkllm-toolkit-cli MODEL_IDS
 ```
 Or alternative you can run immediately on the image i have prebuilt
 ```
 sudo docker run --rm --privileged \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
-  thanhtantran/rkllm-cli:latest MODEL_IDS
+  thanhtantran/rkllm-toolkit-cli:latest MODEL_IDS
 ```
 
 ## Run on NixOS
