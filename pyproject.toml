@@ -12,6 +12,7 @@ dependencies = [
     "rkllm-toolkit",
     "setuptools>=75.8.2",
     "typer>=0.15.1",
+    "hf_xet",
 ]
 
 [tool.uv]
