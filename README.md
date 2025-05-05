@@ -83,4 +83,6 @@ $ nix run github:thanhtantran/rkllm-toolkit-cli
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
-Based on https://github.com/datakurre/rkllm-toolkit-cli
+Based on:
+- https://github.com/datakurre/rkllm-toolkit-cli
+- https://github.com/c0zaut/ez-er-rkllm-toolkit
