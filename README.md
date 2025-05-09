@@ -42,7 +42,7 @@ rkllm-toolkit [OPTIONS] MODEL_IDS...
 
 Build the image
 ```bash
-git clone https://github.com/datakurre/rkllm-toolkit-cli.git
+git clone https://github.com/thanhtantran/rkllm-toolkit-cli.git
 cd rkllm-toolkit-cli
 docker build -t rkllm-toolkit-cli .
 ```
