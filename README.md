@@ -1,3 +1,6 @@
+[🇻🇳 Xem bản tiếng Việt](README-VIE.md)
+
+
 This is the toolkit to convert model from Hugging Face to RKLLM format in order to run on Rockchip NPU device, like Orange Pi 5 with RK3588. Please note that this code should be run on a powerful X86 machine, with graphic card to convert the model, not on Orange Pi.
 
 Tested on Xeon E5 dual CPU, 64GB RAM and RTX 3060 12GB machine, running Ubuntu 22.04 / Python 3.10. 
@@ -55,15 +58,11 @@ echo "hf_your_token_here" > ~/.cache/huggingface/token
 
 Run container with command
 ```
-sudo docker run --rm --privileged \
-  -v ~/.cache/huggingface:/root/.cache/huggingface \
-  rkllm-toolkit-cli MODEL_IDS
+sudo docker run --rm --privileged   -v ~/.cache/huggingface:/root/.cache/huggingface   rkllm-toolkit-cli MODEL_IDS
 ```
 Or alternative you can run immediately on the image i have prebuilt
 ```
-sudo docker run --rm --privileged \
-  -v ~/.cache/huggingface:/root/.cache/huggingface \
-  thanhtantran/rkllm-toolkit-cli:latest MODEL_IDS
+sudo docker run --rm --privileged   -v ~/.cache/huggingface:/root/.cache/huggingface   thanhtantran/rkllm-toolkit-cli:latest MODEL_IDS
 ```
 
 ## Run on NixOS
